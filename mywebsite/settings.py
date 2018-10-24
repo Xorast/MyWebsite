@@ -25,7 +25,7 @@ SECRET_KEY = os.environ.get("SECRET_KEY")
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['mysite-pangur.c9users.io','www.xavierastor.com']
+ALLOWED_HOSTS = ['mysite-pangur.c9users.io','xavierastor.herokuapp.com','www.xavierastor.com']
 
 
 # Application definition
