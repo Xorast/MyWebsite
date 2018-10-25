@@ -11,10 +11,16 @@ window.onload = Initialisation() ;
 
 // MENU APPEARANCE
 $(function(){  // $(document).ready shorthand
-    $('.hideme-landing-1').animate({'opacity':'1'},3000);
+    $('#hideme-landing-1').animate({'opacity':'1'},2000);
     setTimeout(function(){
-          $('.hideme-landing-2').animate({'opacity':'1'},3000);
-    },3000);
+          $('#hideme-landing-2').animate({'opacity':'1'},2000);
+    },2000);
+    setTimeout(function(){
+          $('#hideme-landing-3').animate({'opacity':'1'},2000);
+    },4000);
+    setTimeout(function(){
+          $('#hideme-landing-4').animate({'opacity':'1'},2000);
+    },6000);
 });
 
 // ELEMENTS APPEAR ON SCROLLING
