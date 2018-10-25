@@ -9,6 +9,7 @@
 
 
 {% block header %}
+    <a class="anchor" id="home"></a>
     <div class="entire-screen">
         <div class="home-block">
             <div class="row no-gutters">
@@ -32,9 +33,10 @@
 
 {% block content %}
 <article>
+<a class="anchor" id="profile"></a>
 <div class="row no-gutters">
 <div class="offset-md-3 col-md-6 text-center">
-<div class="bg-primary text-white p-5 rounded">
+<div class="bg-primary text-white p-5 rounded border border-primary">
     
     <svg    class="svg-article"
             aria-hidden="true" 
@@ -48,9 +50,11 @@
     </svg>
     
     <h2 class="text-center">Profile</h2>
+
+    <div class="row no-gutters text-center">
     
-    <p>Junior Full Stack Developer with real-world experience: see portfolio below.</p>
-    <p>Trained specifically in current front-end / back-end technologies with a five 
+    <p>Junior Full Stack Developer with real-world experience: see portfolio below. 
+    Trained specifically in current front-end / back-end technologies with a five 
     month hands-on classroom course.</p>
     
     <p>Six years previous experience as a project engineer, providing strong teamwork 
@@ -58,15 +62,18 @@
     (two Master of Science degrees) providing strong analytical thinking abilities 
     and a capacity to learn and adapt fast.</p>
 
+    </div>
+    
 </div>
 </div>
 </div>
 </article>
 
 <article>
+<a class="anchor" id="technicalskills"></a>
 <div class="row no-gutters">
 <div class="offset-md-3 col-md-6 text-center">
-<div class="bg-secondary text-white p-5 rounded">
+<div class="bg-secondary text-white p-5 rounded border border-secondary">
     
     <svg    class="svg-article"
             aria-hidden="true" 
@@ -118,9 +125,10 @@
 </article>
 
 <article>
+<a class="anchor" id="projects"></a>
 <div class="row no-gutters">
 <div class="offset-md-3 col-md-6 text-center">
-<div class="bg-success text-white p-5 rounded">
+<div class="bg-success text-white p-5 rounded border border-success">
     
     <svg    class="svg-article"
             aria-hidden="true" 
@@ -134,24 +142,66 @@
     </svg>
     
     <h2 class="text-center">Completed Projects</h2>
-    <div class="row">
+    <div class="row no-gutters">
         
-        <div class="col-md-12 project-wrapper">
-        <a href="https://www.tcd-baseflow.com" target="blank_">
-        <img class="img-fluid" alt="Trinity Project" src="{% static "images/trinity-project.png" %}">    
-        </a>
+        <div class="col-md-12 project-wrapper rounded">
+            
+            <a href="https://www.tcd-baseflow.com" target="blank_">
+            <img class="img-fluid rounded img-project border border-primary" alt="Trinity Project" src="{% static "images/trinity-project.png" %}">    
+            </a>
+            
+            <div class="project-description">
+                <div class="row no-gutters">
+                    <div class="col-md-12">    
+                    <h2>Project Trinity College Dublin</h2>
+                    <p>Online scientific tool developed for Trinity College Dublin</p>
+                    </div>
+                    <div class="col-md-6 offset-md-3">
+                    <button type="button" class="btn btn-secondary btn-block p-2" onclick="goTo('https://www.tcd-baseflow.com/')">Go to live version</button>
+                    <button type="button" class="btn btn-secondary btn-block p-2" onclick="goTo('https://github.com/Xorast/Trinity-Project')">See code (GitHub)</button>
+                    </div>
+                </div>
+            </div>
+            
         </div>
         
-        <div class="col-md-12 project-wrapper">
-        <a href="https://www.mjc-mauguio-carnon.com" target="blank_">
-        <img class="img-fluid" alt="Youth & Community Center" src="{% static "images/mjc-project.png" %}">
-        </a>
+        <div class="col-md-12 project-wrapper rounded">
+            <a href="https://www.mjc-mauguio-carnon.com" target="blank_">
+            <img class="img-fluid rounded img-project border border-primary" alt="Youth & Community Center" src="{% static "images/mjc-project.png" %}">
+            </a>
+            <div class="project-description">
+                <div class="row no-gutters">
+                    <div class="col-md-12">    
+                    <h2>Project MJC</h2>
+                    <p>Website for a 2,800 members Youth & Community Center</p>
+                    </div>
+                    <div class="col-md-6 offset-md-3">
+                    <button type="button" class="btn btn-secondary btn-block p-2" onclick="goTo('https://www.mjc-mauguio-carnon.com/')">Go to live Version</button>
+                    <button type="button" class="btn btn-secondary btn-block p-2" onclick="goTo('https://github.com/Xorast/MJC-Website')">See code (GitHub)</button>
+                    </div>
+                </div>
+            </div>
         </div>
         
-        <div class="col-md-12 project-wrapper">
-        <a href="http://api.xavierastor.com" target="blank_">
-        <img class="img-fluid" alt="Single Page Application & API" src="{% static "images/spa-api-project.png" %}"> 
-        </a>
+        <div class="col-md-12 project-wrapper rounded">
+            
+            <a href="http://api.xavierastor.com" target="blank_">
+            <img class="img-fluid rounded img-project border border-primary" alt="Single Page Application & API" src="{% static "images/spa-api-project.png" %}"> 
+            </a>
+            
+            <div class="project-description">
+                <div class="row no-gutters">
+                    <div class="col-md-12">    
+                    <h2>Single Page Application & API</h2>
+                    <p>Personnal training</p>
+                    </div>
+                    <div class="col-md-6 offset-md-3">
+                    <button type="button" class="btn btn-secondary btn-block p-2" onclick="goTo('https://apixavierastor.herokuapp.com/')">Go to live version</button>
+                    <button type="button" class="btn btn-secondary btn-block p-2" onclick="goTo('https://github.com/Xorast/project-API')">See code (GitHub)</button>
+                    </div>
+                </div>
+            </div>
+            
         </div>
         
         
@@ -164,6 +214,7 @@
 </article>
 
 <article>
+<a class="anchor" id="cv"></a>
 <div class="row no-gutters">
 <div class="offset-md-3 col-md-6 text-center">
 <div class="border-primary">
@@ -173,17 +224,17 @@
     
         <div class="col-md m-2 d-flex flex-column justify-content-center">
             <a href="{% static "cv/CV-Junior-Full-Stack-Developer-Xavier-Astor.pdf" %}" target="blank_">
-            <button type="button" class="btn btn-outline-primary btn-lg btn-block">Download CV</button>
+            <img class="img-contact" src="{% static "svg/CV.png" %}" alt="">
             </a>
         </div>
         <div class="col-md m-2">
-            <a href="{% static "cv/CV-Junior-Full-Stack-Developer-Xavier-Astor" %}" target="blank_">
-            <button type="button" class="btn btn-outline-primary btn-lg btn-block">See GitHub Repo</button>
+            <a href="https://www.linkedin.com/in/web-dev-xavier-astor/" target="blank_">
+            <img class="img-contact" src="{% static "svg/in-dark.png" %}" alt="">
             </a>
         </div>
         <div class="col-md m-2">
-            <a href="{% static "cv/CV-Junior-Full-Stack-Developer-Xavier-Astor" %}" target="blank_">
-            <button type="button" class="btn btn-outline-primary btn-lg btn-block">See LinkedIn Profile</button>
+            <a href="https://github.com/Xorast" target="blank_">
+            <img id="test" class="img-contact" src="{% static "svg/git-dark.png" %}" alt="">
             </a>
         </div>
     
