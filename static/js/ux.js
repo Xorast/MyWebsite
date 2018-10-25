@@ -1,10 +1,10 @@
-// Navbar clash
-// "d-flex" used for having the item on the right side ;
-// clashing with collapse (display block) on small screen (burger menu)
-// if seen from small screen : remove the classes d-flex and justifiy-...
+// UX.js
+
+
 function Initialisation() {
       if ($(window).width() < 990) { 
-          $('#navbarColor02').removeClass("d-flex justify-content-end");       
+          $('#navbarColor02').removeClass("d-flex justify-content-end");     // Navbar clash between collapse & d-flex  
+          $('.project-description').removeClass("project-description");      // Make div apperearing under the project img (no hover)
       }
 }
 
@@ -17,8 +17,9 @@ function goTo(url) {
       win.focus();
 }
 
-window.onload = Initialisation() ;
 
+// RESPONSIVENESS
+window.onload = Initialisation() ;
 
 // ELEMENTS APPEAR ON SCROLLING
 // Coming from codepen : https://codepen.io/anon/pen/zmyyBe
