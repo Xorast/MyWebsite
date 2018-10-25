@@ -121,6 +121,14 @@ box {
 
 /*ELEMENTS APPEAR ON SCROLLING*/
 /*Coming from codepen : https://codepen.io/anon/pen/zmyyBe*/
+.hideme-landing-1 {
+    opacity:0;
+}
+
+.hideme-landing-2 {
+    opacity:0;
+}
+
 .hideme {
     opacity:0;
 }

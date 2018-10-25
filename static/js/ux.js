@@ -1,33 +1,24 @@
 // UX.js
 
-
+// RESPONSIVENESS
 function Initialisation() {
       if ($(window).width() < 990) { 
           $('#navbarColor02').removeClass("d-flex justify-content-end");     // Navbar clash between collapse & d-flex  
           $('.project-description').removeClass("project-description");      // Make div apperearing under the project img (no hover)
       }
 }
-
-// Link without the CSS hassle
-function goTo(url) {
-      // open in the same tab
-      // window.location.href = url;
-      // open in a new tab
-      var win = window.open(url, '_blank');
-      win.focus();
-}
-
-
-// RESPONSIVENESS
 window.onload = Initialisation() ;
+
+// MENU APPEARANCE
+$(function(){  // $(document).ready shorthand
+    $('.hideme-landing-1').animate({'opacity':'1'},3000);
+    setTimeout(function(){
+          $('.hideme-landing-2').animate({'opacity':'1'},3000);
+    },3000);
+});
 
 // ELEMENTS APPEAR ON SCROLLING
 // Coming from codepen : https://codepen.io/anon/pen/zmyyBe
-
-$(function(){  // $(document).ready shorthand
-  $('.monster').fadeIn('slow');
-});
-
 $(document).ready(function() {
     
     /* Every time the window is scrolled ... */
@@ -42,7 +33,7 @@ $(document).ready(function() {
             /* If the object is completely visible in the window, fade it it */
             if( bottom_of_window > bottom_of_object ){
                 
-                $(this).animate({'opacity':'1'},5000);
+                $(this).animate({'opacity':'1'},3000);
                     
             }
             
@@ -51,3 +42,13 @@ $(document).ready(function() {
     });
     
 });
+
+
+// LINK (without the CSS hassle...)
+function goTo(url) {
+      // open in the same tab
+      // window.location.href = url;
+      // open in a new tab
+      var win = window.open(url, '_blank');
+      win.focus();
+}
