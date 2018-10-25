@@ -65,6 +65,7 @@ box {
     /*-webkit-filter: opacity(.5);*/
 }
 
+/* For links within page */
 .anchor {
   display: block;
   position: relative;
@@ -87,6 +88,7 @@ box {
   /*width:8rem;*/
 }
 
+/* sliding panel over project image */
 .project-description {
  transform: translateY(-100%);
   position: absolute; /* Position the background text */
@@ -106,9 +108,6 @@ box {
     -o-transition: all 1s ease-in;
 }
 
-
-
-
 .project-wrapper:hover .project-description {
     /*visibility:visible;*/
    transform: translateY(0%);
@@ -117,4 +116,10 @@ box {
     -moz-transition: transform 1s ease-out;
     -ms-transition: transform 1s ease-out;
     -o-transition: transform 1s ease-out;
+}
+
+/*ELEMENTS APPEAR ON SCROLLING*/
+/*Coming from codepen : https://codepen.io/anon/pen/zmyyBe*/
+.hideme {
+    opacity:0;
 }
