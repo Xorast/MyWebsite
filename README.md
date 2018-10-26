@@ -31,7 +31,8 @@ Responsivenss has been tested through the chrome dev tool and on mobile.
 
 ## WIREFRAME
 
-One page document, CV like.
+See pictures in the "wireframe" folder.
+The big pictures has been drawn to give the structure and then the details has been design as I coded the project.
 
 ## DEPLOYMENT
 
